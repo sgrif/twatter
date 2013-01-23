@@ -1,6 +1,7 @@
 require "twatter/authenticator"
 require "twatter/timeline"
 require "twatter/api"
+require "twatter/tweet"
 
 class Twatter
   extend Forwardable
@@ -20,7 +21,10 @@ class Twatter
   end
 
   def render_home_timeline
-    puts "HOME TIMELINE"
-    timeline = Timeline.new(API.home_timline)
+    puts "HOME TIMELINE".rjust(17)
+    timeline = Timeline.new(API.home_timeline)
+    timeline.tweets.each do |tweet|
+      puts "@#{tweet.screen_name}".rjust(17) + " " + tweet.text
+    end
   end
 end
