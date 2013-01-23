@@ -1,0 +1,105 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/home_timeline.json?count=1
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 4.4.4
+      Authorization:
+      - OAuth oauth_consumer_key="xqEsjJ1DXwxt9AJMRaOA", oauth_nonce="88d2cde9195d1123b335a9737101fdf7",
+        oauth_signature="qd3FvhpRv4jpjGNd1F0isMm25iw%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1358908145", oauth_token="17656843-LUr3Ajs8st1XQxunUTGIFjJsBhIvTHOFgSHmprfjk",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1BY2Nlc3MtTGV2ZWw=":
+      - !binary |-
+        cmVhZC13cml0ZQ==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
+      !binary "TGFzdC1Nb2RpZmllZA==":
+      - !binary |-
+        V2VkLCAyMyBKYW4gMjAxMyAwMjoyOTowNSBHTVQ=
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        VHVlLCAzMSBNYXIgMTk4MSAwNTowMDowMCBHTVQ=
+      !binary "UHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3JlLCBtdXN0LXJldmFsaWRhdGUsIHByZS1jaGVj
+        az0wLCBwb3N0LWNoZWNrPTA=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        Z3Vlc3RfaWQ9djElM0ExMzU4OTA4MTQ1NTc0ODkxNDg7IEV4cGlyZXM9RnJp
+        LCAyMy1KYW4tMjAxNSAwMjoyOTowNSBHTVQ7IFBhdGg9LzsgRG9tYWluPS50
+        d2l0dGVyLmNvbQ==
+      - !binary |-
+        bGFuZz1lbg==
+      !binary "WC1UcmFuc2FjdGlvbg==":
+      - !binary |-
+        NmNjMTQyOGNhYzk2NWJjOA==
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAyMyBKYW4gMjAxMyAwMjoyOTowNSBHTVQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        MTY0NQ==
+      !binary "WC1SYXRlLUxpbWl0LUxpbWl0":
+      - !binary |-
+        MTU=
+      !binary "WC1SYXRlLUxpbWl0LVJlbWFpbmluZw==":
+      - !binary |-
+        MTM=
+      !binary "WC1SYXRlLUxpbWl0LVJlc2V0":
+      - !binary |-
+        MTM1ODkwODYxNw==
+      !binary "U2VydmVy":
+      - !binary |-
+        dGZl
+    body:
+      encoding: UTF-8
+      string: "[{\"created_at\":\"Wed Jan 23 02:26:07 +0000 2013\",\"id\":293907432512552961,\"id_str\":\"293907432512552961\",\"text\":\"RT
+        @ZachsMind: \\\"Feeling love is beautiful. Feeling the earth is 6,000 years
+        old is stupid.\\\" @PennJillette #quote http:\\/\\/t.co\\/ZzxOkXp4 #a ...\",\"source\":\"web\",\"truncated\":false,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":14749383,\"id_str\":\"14749383\",\"name\":\"Penn
+        Jillette\",\"screen_name\":\"pennjillette\",\"location\":\"Las Vegas, NV,
+        USA\",\"description\":\"More than 1\\/2  (by weight) of Penn & Teller at the
+        Rio in Vegas, Penn's Sunday School Podcast, P&T Tell a Lie on Discovery, P&T:
+        Fool Us! on ITV.God, No! - book\",\"url\":\"http:\\/\\/PennSundaySchool.com\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"http:\\/\\/PennSundaySchool.com\",\"expanded_url\":null,\"indices\":[0,27]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":1889555,\"friends_count\":7,\"listed_count\":17090,\"created_at\":\"Mon
+        May 12 20:38:14 +0000 2008\",\"favourites_count\":2,\"utc_offset\":-28800,\"time_zone\":\"Pacific
+        Time (US & Canada)\",\"geo_enabled\":true,\"verified\":true,\"statuses_count\":19986,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"profile_background_color\":\"C0DEED\",\"profile_background_image_url\":\"http:\\/\\/a0.twimg.com\\/images\\/themes\\/theme1\\/bg.png\",\"profile_background_image_url_https\":\"https:\\/\\/si0.twimg.com\\/images\\/themes\\/theme1\\/bg.png\",\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/a0.twimg.com\\/profile_images\\/2709934282\\/4b8bbdfdfa45ca60482137383ca2c6f2_normal.jpeg\",\"profile_image_url_https\":\"https:\\/\\/si0.twimg.com\\/profile_images\\/2709934282\\/4b8bbdfdfa45ca60482137383ca2c6f2_normal.jpeg\",\"profile_link_color\":\"0084B4\",\"profile_sidebar_border_color\":\"C0DEED\",\"profile_sidebar_fill_color\":\"DDEEF6\",\"profile_text_color\":\"333333\",\"profile_use_background_image\":true,\"default_profile\":true,\"default_profile_image\":false,\"following\":true,\"follow_request_sent\":null,\"notifications\":null},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweeted_status\":{\"created_at\":\"Wed
+        Jan 23 00:30:22 +0000 2013\",\"id\":293878305520771073,\"id_str\":\"293878305520771073\",\"text\":\"\\\"Feeling
+        love is beautiful. Feeling the earth is 6,000 years old is stupid.\\\" @PennJillette
+        #quote http:\\/\\/t.co\\/ZzxOkXp4 #atheism\",\"source\":\"\\u003ca href=\\\"http:\\/\\/www.tweetdeck.com\\\"
+        rel=\\\"nofollow\\\"\\u003eTweetDeck\\u003c\\/a\\u003e\",\"truncated\":false,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":16181537,\"id_str\":\"16181537\",\"name\":\"Doktor
+        Zach\",\"screen_name\":\"ZachsMind\",\"location\":\"Gotham City\",\"description\":\"SubGenius.
+        Atheist. Apostate. I disrespect ALL beliefs NOT just yours DONT take it personal.
+        Irrational reason w\\/a side order of snark. #JocularAbsurdist\",\"url\":\"http:\\/\\/zachsmind.wordpress.com\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"http:\\/\\/zachsmind.wordpress.com\",\"expanded_url\":null,\"indices\":[0,30]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":3581,\"friends_count\":2921,\"listed_count\":370,\"created_at\":\"Mon
+        Sep 08 07:32:13 +0000 2008\",\"favourites_count\":234,\"utc_offset\":-21600,\"time_zone\":\"Central
+        Time (US & Canada)\",\"geo_enabled\":false,\"verified\":false,\"statuses_count\":94849,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"profile_background_color\":\"000000\",\"profile_background_image_url\":\"http:\\/\\/a0.twimg.com\\/profile_background_images\\/696437765\\/20f401a80335b91ea03c7972bcd127fc.jpeg\",\"profile_background_image_url_https\":\"https:\\/\\/si0.twimg.com\\/profile_background_images\\/696437765\\/20f401a80335b91ea03c7972bcd127fc.jpeg\",\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/a0.twimg.com\\/profile_images\\/3123173907\\/1072ab64802face5931ac77a79c4e4f6_normal.jpeg\",\"profile_image_url_https\":\"https:\\/\\/si0.twimg.com\\/profile_images\\/3123173907\\/1072ab64802face5931ac77a79c4e4f6_normal.jpeg\",\"profile_banner_url\":\"https:\\/\\/si0.twimg.com\\/profile_banners\\/16181537\\/1358481932\",\"profile_link_color\":\"990099\",\"profile_sidebar_border_color\":\"000000\",\"profile_sidebar_fill_color\":\"0099FF\",\"profile_text_color\":\"000099\",\"profile_use_background_image\":true,\"default_profile\":false,\"default_profile_image\":false,\"following\":null,\"follow_request_sent\":null,\"notifications\":null},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweet_count\":17,\"entities\":{\"hashtags\":[{\"text\":\"quote\",\"indices\":[91,97]},{\"text\":\"atheism\",\"indices\":[119,127]}],\"urls\":[{\"url\":\"http:\\/\\/t.co\\/ZzxOkXp4\",\"expanded_url\":\"http:\\/\\/nyti.ms\\/TirhOn\",\"display_url\":\"nyti.ms\\/TirhOn\",\"indices\":[98,118]}],\"user_mentions\":[{\"screen_name\":\"pennjillette\",\"name\":\"Penn
+        Jillette\",\"id\":14749383,\"id_str\":\"14749383\",\"indices\":[77,90]}]},\"favorited\":false,\"retweeted\":false,\"possibly_sensitive\":false},\"retweet_count\":17,\"entities\":{\"hashtags\":[{\"text\":\"quote\",\"indices\":[106,112]},{\"text\":\"a\",\"indices\":[134,136]}],\"urls\":[{\"url\":\"http:\\/\\/t.co\\/ZzxOkXp4\",\"expanded_url\":\"http:\\/\\/nyti.ms\\/TirhOn\",\"display_url\":\"nyti.ms\\/TirhOn\",\"indices\":[113,133]}],\"user_mentions\":[{\"screen_name\":\"ZachsMind\",\"name\":\"Doktor
+        Zach\",\"id\":16181537,\"id_str\":\"16181537\",\"indices\":[3,13]},{\"screen_name\":\"pennjillette\",\"name\":\"Penn
+        Jillette\",\"id\":14749383,\"id_str\":\"14749383\",\"indices\":[92,105]}]},\"favorited\":false,\"retweeted\":false,\"possibly_sensitive\":false}]"
+    http_version: 
+  recorded_at: Wed, 23 Jan 2013 02:29:05 GMT
+recorded_with: VCR 2.4.0

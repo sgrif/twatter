@@ -1,0 +1,92 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.twitter.com/1.1/statuses/show/293622889096282112.json
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      User-Agent:
+      - Twitter Ruby Gem 4.4.4
+      Authorization:
+      - OAuth oauth_consumer_key="xqEsjJ1DXwxt9AJMRaOA", oauth_nonce="f5b2ae80beee5a8b4cd581d1ae37824b",
+        oauth_signature="b1D9Aui77fd74b8PxOQgr6G82a4%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1358911275", oauth_token="17656843-LUr3Ajs8st1XQxunUTGIFjJsBhIvTHOFgSHmprfjk",
+        oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: !binary |-
+        T0s=
+    headers:
+      !binary "WC1BY2Nlc3MtTGV2ZWw=":
+      - !binary |-
+        cmVhZC13cml0ZQ==
+      !binary "Q29udGVudC1UeXBl":
+      - !binary |-
+        YXBwbGljYXRpb24vanNvbjtjaGFyc2V0PXV0Zi04
+      !binary "TGFzdC1Nb2RpZmllZA==":
+      - !binary |-
+        V2VkLCAyMyBKYW4gMjAxMyAwMzoyMToxNiBHTVQ=
+      !binary "RXhwaXJlcw==":
+      - !binary |-
+        VHVlLCAzMSBNYXIgMTk4MSAwNTowMDowMCBHTVQ=
+      !binary "UHJhZ21h":
+      - !binary |-
+        bm8tY2FjaGU=
+      !binary "Q2FjaGUtQ29udHJvbA==":
+      - !binary |-
+        bm8tY2FjaGUsIG5vLXN0b3JlLCBtdXN0LXJldmFsaWRhdGUsIHByZS1jaGVj
+        az0wLCBwb3N0LWNoZWNrPTA=
+      !binary "U2V0LUNvb2tpZQ==":
+      - !binary |-
+        Z3Vlc3RfaWQ9djElM0ExMzU4OTExMjc2MTAwMjMwMzA7IEV4cGlyZXM9RnJp
+        LCAyMy1KYW4tMjAxNSAwMzoyMToxNiBHTVQ7IFBhdGg9LzsgRG9tYWluPS50
+        d2l0dGVyLmNvbQ==
+      - !binary |-
+        bGFuZz1lbg==
+      !binary "WC1UcmFuc2FjdGlvbg==":
+      - !binary |-
+        ZmE3ODZlYzAxNGYyNjllOA==
+      !binary "WC1GcmFtZS1PcHRpb25z":
+      - !binary |-
+        U0FNRU9SSUdJTg==
+      !binary "U3RhdHVz":
+      - !binary |-
+        MjAwIE9L
+      !binary "RGF0ZQ==":
+      - !binary |-
+        V2VkLCAyMyBKYW4gMjAxMyAwMzoyMToxNiBHTVQ=
+      !binary "Q29udGVudC1MZW5ndGg=":
+      - !binary |-
+        OTU0
+      !binary "WC1SYXRlLUxpbWl0LUxpbWl0":
+      - !binary |-
+        MTgw
+      !binary "WC1SYXRlLUxpbWl0LVJlbWFpbmluZw==":
+      - !binary |-
+        MTc5
+      !binary "WC1SYXRlLUxpbWl0LVJlc2V0":
+      - !binary |-
+        MTM1ODkxMjE3Ng==
+      !binary "U2VydmVy":
+      - !binary |-
+        dGZl
+    body:
+      encoding: UTF-8
+      string: "{\"created_at\":\"Tue Jan 22 07:35:26 +0000 2013\",\"id\":293622889096282112,\"id_str\":\"293622889096282112\",\"text\":\"Today's
+        Twitter slowness points out what a great job they've done at transforming
+        a once-flaky system into a (mostly) very stable one.\",\"source\":\"\\u003ca
+        href=\\\"http:\\/\\/tapbots.com\\/tweetbot\\\" rel=\\\"nofollow\\\"\\u003eTweetbot
+        for iOS\\u003c\\/a\\u003e\",\"truncated\":false,\"in_reply_to_status_id\":null,\"in_reply_to_status_id_str\":null,\"in_reply_to_user_id\":null,\"in_reply_to_user_id_str\":null,\"in_reply_to_screen_name\":null,\"user\":{\"id\":809685,\"id_str\":\"809685\",\"name\":\"Gary
+        Bernhardt\",\"screen_name\":\"garybernhardt\",\"location\":\"Seattle, WA\",\"description\":\"meauxnaddes\\n\\n\\n\\n\\n\\nheh\",\"url\":\"http:\\/\\/t.co\\/7g5mT4HB\",\"entities\":{\"url\":{\"urls\":[{\"url\":\"http:\\/\\/t.co\\/7g5mT4HB\",\"expanded_url\":\"http:\\/\\/destroyallsoftware.com\",\"display_url\":\"destroyallsoftware.com\",\"indices\":[0,20]}]},\"description\":{\"urls\":[]}},\"protected\":false,\"followers_count\":8661,\"friends_count\":46,\"listed_count\":506,\"created_at\":\"Sun
+        Mar 04 05:12:14 +0000 2007\",\"favourites_count\":1034,\"utc_offset\":-28800,\"time_zone\":\"Pacific
+        Time (US & Canada)\",\"geo_enabled\":false,\"verified\":false,\"statuses_count\":37176,\"lang\":\"en\",\"contributors_enabled\":false,\"is_translator\":false,\"profile_background_color\":\"9AE4E8\",\"profile_background_image_url\":\"http:\\/\\/a0.twimg.com\\/images\\/themes\\/theme1\\/bg.png\",\"profile_background_image_url_https\":\"https:\\/\\/si0.twimg.com\\/images\\/themes\\/theme1\\/bg.png\",\"profile_background_tile\":false,\"profile_image_url\":\"http:\\/\\/a0.twimg.com\\/profile_images\\/1170938305\\/twitter_headshot_normal.png\",\"profile_image_url_https\":\"https:\\/\\/si0.twimg.com\\/profile_images\\/1170938305\\/twitter_headshot_normal.png\",\"profile_link_color\":\"0000FF\",\"profile_sidebar_border_color\":\"87BC44\",\"profile_sidebar_fill_color\":\"E0FF92\",\"profile_text_color\":\"000000\",\"profile_use_background_image\":true,\"default_profile\":false,\"default_profile_image\":false,\"following\":true,\"follow_request_sent\":false,\"notifications\":null},\"geo\":null,\"coordinates\":null,\"place\":null,\"contributors\":null,\"retweet_count\":0,\"entities\":{\"hashtags\":[],\"urls\":[],\"user_mentions\":[]},\"favorited\":false,\"retweeted\":false}"
+    http_version: 
+  recorded_at: Wed, 23 Jan 2013 03:21:16 GMT
+recorded_with: VCR 2.4.0
