@@ -5,6 +5,13 @@ $LOAD_PATH.unshift lib_dir unless $LOAD_PATH.include? lib_dir
 require "rubygems"
 require "twitter"
 require "twatter"
+require "optparse"
+
+OptionParser.new do |opts|
+  opts.on "-c", "--credentials [path/to/file]" do |c|
+    Twatter::Authenticator.load_credentials_from_file(c)
+  end
+end.parse!
 
 app = Twatter.new($stdout, $stdin)
 app.run

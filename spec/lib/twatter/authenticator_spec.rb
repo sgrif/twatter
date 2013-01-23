@@ -1,11 +1,22 @@
-require_relative "../../../lib/twatter/authenticator"
-require "vcr_helper"
-require "twitter"
+require "spec_helper"
 
 class Twatter
   describe Authenticator do
+    let(:credentials) do
+      {
+        consumer_key: ENV.fetch("TWATTER_CONSUMER_KEY"),
+        consumer_secret: ENV.fetch("TWATTER_CONSUMER_SECRET"),
+        oauth_token: ENV.fetch("TWATTER_OAUTH_TOKEN"),
+        oauth_token_secret: ENV.fetch("TWATTER_OAUTH_TOKEN_SECRET")
+      }
+    end
+
     it "reports valid credentials" do
       VCR.use_cassette "authorize-with-valid-credentials" do
+        file = write_file(".twitter_credentials", credentials.to_yaml)
+        in_current_dir do
+          Authenticator.load_credentials_from_file file.path
+        end
         Authenticator.valid_credentials?.should be_true
       end
     end
