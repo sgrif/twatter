@@ -3,6 +3,8 @@ require "twatter/timeline"
 require "twatter/api"
 require "twatter/tweet"
 
+# Main entry point into the application.
+# Handles all IO
 class Twatter
   extend Forwardable
   def_delegator :@output, :puts

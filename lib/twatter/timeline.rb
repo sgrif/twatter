@@ -1,4 +1,5 @@
 class Twatter
+  # Immutable data container to hold tweets
   class Timeline
     attr_reader :tweets
 

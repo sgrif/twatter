@@ -1,5 +1,5 @@
 class Twatter
-  class API
+  module API
     def self.home_timeline
       make_tweets Twitter.home_timeline
     end

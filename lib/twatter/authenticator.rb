@@ -1,7 +1,7 @@
 require "yaml"
 
 class Twatter
-  class Authenticator
+  module Authenticator
     def self.valid_credentials?
       return false unless Twitter.credentials?
       begin
