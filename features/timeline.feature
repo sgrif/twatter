@@ -1,6 +1,5 @@
 Feature: View Timeline
 
-  @vcr
   Scenario: Home Timeline
     Given I am authenticated
     When I start the app

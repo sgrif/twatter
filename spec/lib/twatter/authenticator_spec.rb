@@ -13,10 +13,7 @@ class Twatter
 
     it "reports valid credentials" do
       VCR.use_cassette "authorize-with-valid-credentials" do
-        file = write_file(".twitter_credentials", credentials.to_yaml)
-        in_current_dir do
-          Authenticator.load_credentials_from_file file.path
-        end
+        Authenticator.load_credentials credentials
         Authenticator.valid_credentials?.should be_true
       end
     end

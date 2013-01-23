@@ -8,7 +8,8 @@ describe Twatter do
     before { Twatter::Authenticator.stub(:valid_credentials?).and_return(true) }
 
     it "shows the user's home timeline" do
-      io.should_receive(:puts).with("HOME TIMELINE")
+      Twatter::API.stub(:home_timeline).and_return([])
+      io.should_receive(:puts).with("    HOME TIMELINE")
       app.run
     end
   end

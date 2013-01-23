@@ -12,9 +12,7 @@ class Twatter
       end
     end
 
-    def self.load_credentials_from_file(file)
-      credentials = YAML.load_file(file)
-
+    def self.load_credentials(credentials)
       Twitter.configure do |c|
         credentials.each do |k, v|
           c.send("#{k}=", v)

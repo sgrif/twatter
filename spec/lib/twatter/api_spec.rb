@@ -7,7 +7,8 @@ class Twatter
   describe API do
     it "fetches my home timeline" do
       VCR.use_cassette("home-timeline") do
-        tweet = Tweet.new("robertherjavec", %{doing fnal edit of 2nd book- quote from my dad " working hard doesn't mean you'll be rich but not working hard guarantees you'll stay poor"})
+        t = Twitter.home_timeline.first
+        tweet = Tweet.new(t.user.screen_name, t.text)
         home_timeline = API.home_timeline
 
         home_timeline.should include(tweet)
@@ -18,7 +19,7 @@ class Twatter
     it "fetches a users timeline" do
       VCR.use_cassette("user-timeline") do
         tweet = Tweet.new("sgrif", "Alright, Clojure... I'll give you a shot.")
-        API.timeline_for("sgrif").first.should == tweet
+        API.timeline_for("sgrif").should include(tweet)
       end
     end
 

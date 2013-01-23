@@ -8,8 +8,11 @@ require "twatter"
 require "optparse"
 
 OptionParser.new do |opts|
-  opts.on "-c", "--credentials [path/to/file]" do |c|
-    Twatter::Authenticator.load_credentials_from_file(c)
+  opts.on "-c", "--credentials [path/to/file]" do |file_path|
+    if file_path
+      credentials = YAML.load_file(file_path)
+      Twatter::Authenticator.load_credentials(credentials)
+    end
   end
 end.parse!
 
