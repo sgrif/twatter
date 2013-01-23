@@ -6,3 +6,5 @@ gem "vcr"
 gem "webmock"
 gem "twitter"
 gem "aruba"
+
+gem "reek"

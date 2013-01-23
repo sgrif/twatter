@@ -13,10 +13,8 @@ class Twatter
     end
 
     def self.load_credentials(credentials)
-      Twitter.configure do |c|
-        credentials.each do |k, v|
-          c.send("#{k}=", v)
-        end
+      credentials.each do |credential, value|
+        Twitter.send("#{credential}=", value)
       end
     end
   end

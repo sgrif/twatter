@@ -5,7 +5,7 @@ class Twatter
     end
 
     def self.timeline_for(screen_name)
-      make_tweets Twitter.user_timeline("sgrif")
+      make_tweets Twitter.user_timeline(screen_name)
     end
 
     def self.tweet(tid)
